@@ -4,6 +4,12 @@ import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faGithub,
+  faLinkedin,
+  faSkype,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -32,7 +38,36 @@ const Sidebar = () => (
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
     </nav>
-    <ul></ul>
+    <ul>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/jonathan-campbell-710b2b222/"
+        >
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/AZCampbell/"
+        >
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com">
+          <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noreferrer" href="skype:live:AZCampbell">
+          <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+        </a>
+      </li>
+    </ul>
   </div>
 )
 
